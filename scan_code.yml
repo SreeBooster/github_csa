@@ -9,4 +9,4 @@ jobs:
   - name: test_rulesset
     run: |
       echo This demo file shows a rulesset to can code and secrets
-      echo *****
+      echo *********
