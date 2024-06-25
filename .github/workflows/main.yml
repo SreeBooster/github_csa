@@ -1,5 +1,3 @@
-Name: Workflow_Main
-
 on:
   push:
     branches: main
