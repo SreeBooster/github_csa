@@ -1,0 +1,17 @@
+Name: Workflow Main
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: demo workflow job
+        run: echo This is a demo workflow for security scan on even push performed on main branch
