@@ -1,8 +1,12 @@
+name: demo-workflow
+run-name: ${{ github.actor }} is a demo for workflow
 on:
   push:
     branches: main
   pull_request:
     branches: [ $default-branch ]
+  branch_protection_rule:
+    types: [created, deleted]
 
 jobs:
   build:
@@ -10,6 +14,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: demo workflow job
-        run: echo This is a demo workflow for security scan on even push performed on main branch
+      - name: demo workflow
+        run: echo This is a demo workflow for security scan on trigger event - push, pull and create/edit branch protection rule
