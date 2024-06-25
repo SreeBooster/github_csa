@@ -1,5 +1,5 @@
 name: demo-workflow
-run-name: ${{ github.actor }} is a demo for workflow
+run-name: Running demo-workflow
 on:
   push:
     branches: main
