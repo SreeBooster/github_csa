@@ -15,4 +15,4 @@ Read the ppt 'github_presentation' for the approach on the solution. This github
 6) Configure email notification
 
 # 3) Automation
-1) create workflows with github Actions to trigger on push, pull and branch protection rules creation/modification, 
+1) create workflows with github Actions to trigger on push, pull and branch protection rules creation/modification, etc
